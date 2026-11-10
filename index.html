@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b12"><link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css"><title>VibeX</title>
+</head>
+<body>
+<header><div class="logo">⚡</div><div><h1>VibeX</h1><small>Your world. One app.</small></div><span class="tag">BETA</span></header>
+<main>
+<section id="home" class="page active">
+<div class="hero"><small>WELCOME TO VIBEX</small><h2>Everything you love,<br>together.</h2><p>Connect. Create. Listen.</p></div>
+<div class="tiles">
+<button data-go="chat">💬<b>Chat</b><small>Messages and groups</small></button>
+<button data-go="videos">▶️<b>Videos</b><small>Short video feed</small></button>
+<button data-go="music" class="wide">🎧<b>Music</b><small>Playlists and your library</small></button>
+</div>
+<p class="note">Starter app: your data stays on this device. Online accounts, real-time chat, video hosting and licensed music are not connected yet.</p>
+</section>
+<section id="chat" class="page"><h2>Messages</h2><div id="messages" class="panel"></div><form id="chatForm"><input id="messageInput" placeholder="Write a message…" maxlength="300" required><button>Send</button></form></section>
+<section id="videos" class="page"><h2>Discover</h2><div class="video"><div class="play">▶</div><h3>Your video feed</h3><p>Upload and stream short videos in the next development phase.</p><button id="likeBtn">♡ Like <span id="likes">0</span></button></div></section>
+<section id="music" class="page"><h2>Music</h2><div class="panel"><div class="cover">♫</div><h3 id="trackName">Choose a demo track</h3><div class="controls"><button id="prev">⏮</button><button id="playBtn">▶ Play</button><button id="next">⏭</button></div></div><div id="tracks"></div><p class="note">Demo controls only. Add audio files you own or connect a licensed music provider for real playback.</p></section>
+<section id="profile" class="page"><h2>Your profile</h2><div class="panel"><div class="avatar">V</div><h3>VibeX User</h3><p>Profile setup and sign-in will be added with the backend.</p></div></section>
+</main>
+<nav><button data-go="home">⌂<small>Home</small></button><button data-go="chat">✉<small>Chat</small></button><button data-go="videos">▷<small>Videos</small></button><button data-go="music">♫<small>Music</small></button><button data-go="profile">●<small>Profile</small></button></nav>
+<script src="app.js"></script>
+</body></html>
